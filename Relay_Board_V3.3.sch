@@ -5754,11 +5754,11 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="CAP.POS1" library="Connector 732-3204" deviceset="732-3204-ND_CONNECTOR" device=""/>
 <part name="CAP.POS2" library="Connector 732-3204" deviceset="732-3204-ND_CONNECTOR" device=""/>
 <part name="U$7" library="ACS770 Current Sensor" deviceset="ACS770LCB_CURRENTSENSOR" device=""/>
-<part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
+<part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1u"/>
 <part name="U$8" library="ACS770 Current Sensor" deviceset="ACS770LCB_CURRENTSENSOR" device=""/>
 <part name="U$9" library="ACS770 Current Sensor" deviceset="ACS770LCB_CURRENTSENSOR" device=""/>
-<part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
-<part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP"/>
+<part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1u"/>
+<part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1u"/>
 <part name="CAP.POS" library="Connector 732-3204" deviceset="732-3204-ND_CONNECTOR" device=""/>
 <part name="R2" library="Resistor" deviceset="R-US_" device="R0805" value="775 (0.1%)"/>
 <part name="R8" library="Resistor" deviceset="R-US_" device="R0805" value="10.5k (0.1%)"/>
@@ -5807,9 +5807,9 @@ Current Sensor</text>
 <wire x1="-121.92" y1="27.94" x2="-121.92" y2="-76.2" width="0.1524" layer="94"/>
 <wire x1="-121.92" y1="-76.2" x2="30.48" y2="-76.2" width="0.1524" layer="94"/>
 <wire x1="30.48" y1="-76.2" x2="139.7" y2="-76.2" width="0.1524" layer="94"/>
-<wire x1="139.7" y1="-76.2" x2="190.5" y2="-76.2" width="0.1524" layer="94"/>
-<wire x1="190.5" y1="-76.2" x2="190.5" y2="127" width="0.1524" layer="94"/>
-<wire x1="190.5" y1="127" x2="121.92" y2="127" width="0.1524" layer="94"/>
+<wire x1="139.7" y1="-76.2" x2="231.14" y2="-76.2" width="0.1524" layer="94"/>
+<wire x1="231.14" y1="-76.2" x2="231.14" y2="127" width="0.1524" layer="94"/>
+<wire x1="231.14" y1="127" x2="121.92" y2="127" width="0.1524" layer="94"/>
 <wire x1="121.92" y1="127" x2="30.48" y2="127" width="0.1524" layer="94"/>
 <wire x1="30.48" y1="127" x2="-121.92" y2="127" width="0.1524" layer="94"/>
 <wire x1="-121.92" y1="27.94" x2="121.92" y2="27.94" width="0.1524" layer="94"/>
@@ -5868,6 +5868,7 @@ Current Sensor</text>
 <wire x1="-22.86" y1="5.08" x2="-12.7" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="5.08" x2="-12.7" y2="10.16" width="0.1524" layer="91"/>
 <label x="-12.7" y="10.16" size="1.778" layer="95"/>
+<junction x="-22.86" y="5.08"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="1"/>
@@ -5991,6 +5992,7 @@ Current Sensor</text>
 <wire x1="111.76" y1="68.58" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <label x="114.3" y="73.66" size="1.778" layer="95"/>
+<junction x="111.76" y="73.66"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -6001,6 +6003,7 @@ Current Sensor</text>
 <wire x1="111.76" y1="88.9" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="93.98" x2="114.3" y2="93.98" width="0.1524" layer="91"/>
 <label x="114.3" y="93.98" size="1.778" layer="95"/>
+<junction x="111.76" y="93.98"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
@@ -6011,6 +6014,7 @@ Current Sensor</text>
 <wire x1="111.76" y1="48.26" x2="109.22" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="53.34" x2="114.3" y2="53.34" width="0.1524" layer="91"/>
 <label x="114.3" y="53.34" size="1.778" layer="95"/>
+<junction x="111.76" y="53.34"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="1"/>
@@ -6107,6 +6111,7 @@ Current Sensor</text>
 <wire x1="-33.02" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
 <label x="-20.32" y="38.1" size="1.778" layer="95"/>
 <pinref part="D1" gate="G$1" pin="(-)"/>
+<junction x="-33.02" y="38.1"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="4"/>
@@ -6546,6 +6551,7 @@ Current Sensor</text>
 <wire x1="-60.96" y1="-91.44" x2="-60.96" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="-83.82" x2="-78.74" y2="-91.44" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="-91.44" x2="-60.96" y2="-91.44" width="0.1524" layer="91"/>
+<junction x="-60.96" y="-91.44"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -6561,6 +6567,7 @@ Current Sensor</text>
 <wire x1="-78.74" y1="17.78" x2="-60.96" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="START.RELAY2" gate="G$1" pin="85"/>
 <wire x1="-60.96" y1="22.86" x2="-60.96" y2="17.78" width="0.1524" layer="91"/>
+<junction x="-60.96" y="17.78"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="GND"/>
@@ -6577,6 +6584,7 @@ Current Sensor</text>
 <wire x1="101.6" y1="-91.44" x2="119.38" y2="-91.44" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="(-)"/>
 <wire x1="121.92" y1="-83.82" x2="119.38" y2="-83.82" width="0.1524" layer="91"/>
+<junction x="119.38" y="-91.44"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="GND"/>
@@ -6593,6 +6601,7 @@ Current Sensor</text>
 <wire x1="101.6" y1="15.24" x2="119.38" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="G$1" pin="(-)"/>
 <wire x1="121.92" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
+<junction x="119.38" y="15.24"/>
 </segment>
 </net>
 <net name="FC_POS" class="0">
@@ -6675,6 +6684,7 @@ Current Sensor</text>
 <wire x1="-60.96" y1="-48.26" x2="-60.96" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="-63.5" x2="-78.74" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="-48.26" x2="-60.96" y2="-48.26" width="0.1524" layer="91"/>
+<junction x="-60.96" y="-48.26"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6705,6 +6715,7 @@ Current Sensor</text>
 <wire x1="-78.74" y1="60.96" x2="-60.96" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="START.RELAY2" gate="G$1" pin="86"/>
 <wire x1="-60.96" y1="60.96" x2="-60.96" y2="53.34" width="0.1524" layer="91"/>
+<junction x="-60.96" y="60.96"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -6736,6 +6747,7 @@ Current Sensor</text>
 <wire x1="101.6" y1="-48.26" x2="119.38" y2="-48.26" width="0.1524" layer="91"/>
 <pinref part="U$14" gate="G$1" pin="(+)"/>
 <wire x1="121.92" y1="-66.04" x2="119.38" y2="-66.04" width="0.1524" layer="91"/>
+<junction x="119.38" y="-48.26"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -6767,6 +6779,7 @@ Current Sensor</text>
 <wire x1="101.6" y1="58.42" x2="119.38" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="U$13" gate="G$1" pin="(+)"/>
 <wire x1="121.92" y1="40.64" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
+<junction x="119.38" y="58.42"/>
 </segment>
 </net>
 <net name="CHARGE_R" class="0">
