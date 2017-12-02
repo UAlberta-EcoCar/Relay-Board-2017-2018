@@ -6304,8 +6304,8 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </class>
 </classes>
 <parts>
-<part name="FCC_1" library="ETHERNET-3" deviceset="ETHERNET" device=""/>
-<part name="FCC_2" library="ETHERNET-3" deviceset="ETHERNET" device=""/>
+<part name="RELAY1" library="ETHERNET-3" deviceset="ETHERNET" device=""/>
+<part name="RELAY2" library="ETHERNET-3" deviceset="ETHERNET" device=""/>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="775 (0.1%)"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="10.5k (0.1%)"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:26059/1" value="10.5k (0.1%)"/>
@@ -6318,7 +6318,7 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <part name="MOTOR.POSITIVE" library="Connector 732-3204" deviceset="732-3204-ND_CONNECTOR" device=""/>
 <part name="MOTOR.GROUND" library="Connector 732-3204" deviceset="732-3204-ND_CONNECTOR" device=""/>
 <part name="CAP.GND" library="Connector 732-3204" deviceset="732-3204-ND_CONNECTOR" device=""/>
-<part name="U$19" library="5555140-6 RJ11" deviceset="5555140-6" device=""/>
+<part name="U$19" library="5555140-6 RJ11" deviceset="5555140-6" device="" value="TO POWERBOARD"/>
 <part name="START.RELAY1" library="VCF4-1000" deviceset="VCF4-1000" device=""/>
 <part name="U$11" library="DMP3056L-7" deviceset="DMP3056L-7" device="DMP3056L-7"/>
 <part name="U$12" library="FCC_parts" deviceset="H11L1" device="H11L1"/>
@@ -6406,8 +6406,8 @@ Current Sensor</text>
 <wire x1="121.92" y1="127" x2="121.92" y2="27.94" width="0.1524" layer="94"/>
 </plain>
 <instances>
-<instance part="FCC_1" gate="G$1" x="172.72" y="17.78"/>
-<instance part="FCC_2" gate="G$1" x="172.72" y="-38.1"/>
+<instance part="RELAY1" gate="G$1" x="172.72" y="17.78"/>
+<instance part="RELAY2" gate="G$1" x="172.72" y="-38.1"/>
 <instance part="R4" gate="G$1" x="104.14" y="78.74"/>
 <instance part="R5" gate="G$1" x="66.04" y="73.66"/>
 <instance part="R6" gate="G$1" x="66.04" y="53.34"/>
@@ -6473,12 +6473,12 @@ Current Sensor</text>
 <label x="-12.7" y="-17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="1"/>
+<pinref part="RELAY1" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="33.02" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
 <label x="154.94" y="33.02" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="7"/>
+<pinref part="RELAY2" gate="G$1" pin="7"/>
 <wire x1="162.56" y1="-38.1" x2="167.64" y2="-38.1" width="0.1524" layer="91"/>
 <label x="154.94" y="-38.1" size="1.778" layer="95"/>
 </segment>
@@ -6543,7 +6543,7 @@ Current Sensor</text>
 <label x="154.94" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="8"/>
+<pinref part="RELAY2" gate="G$1" pin="8"/>
 <wire x1="167.64" y1="-40.64" x2="162.56" y2="-40.64" width="0.1524" layer="91"/>
 <label x="154.94" y="-40.64" size="1.778" layer="95"/>
 </segment>
@@ -6595,7 +6595,7 @@ Current Sensor</text>
 <label x="-12.7" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="4"/>
+<pinref part="RELAY2" gate="G$1" pin="4"/>
 <wire x1="162.56" y1="-30.48" x2="167.64" y2="-30.48" width="0.1524" layer="91"/>
 <label x="154.94" y="-30.48" size="1.778" layer="95"/>
 </segment>
@@ -6608,7 +6608,7 @@ Current Sensor</text>
 <pinref part="S2" gate="1" pin="P"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="1"/>
+<pinref part="RELAY2" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="-22.86" x2="167.64" y2="-22.86" width="0.1524" layer="91"/>
 <label x="154.94" y="-22.86" size="1.778" layer="95"/>
 </segment>
@@ -6620,7 +6620,7 @@ Current Sensor</text>
 <label x="60.325" y="-33.655" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="2"/>
+<pinref part="RELAY1" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <label x="154.94" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -6719,7 +6719,7 @@ Current Sensor</text>
 <label x="-12.7" y="-38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="5"/>
+<pinref part="RELAY2" gate="G$1" pin="5"/>
 <wire x1="162.56" y1="-33.02" x2="167.64" y2="-33.02" width="0.1524" layer="91"/>
 <label x="154.94" y="-33.02" size="1.778" layer="95"/>
 </segment>
@@ -6755,7 +6755,7 @@ Current Sensor</text>
 <label x="-12.7" y="-66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="6"/>
+<pinref part="RELAY2" gate="G$1" pin="6"/>
 <wire x1="162.56" y1="-35.56" x2="167.64" y2="-35.56" width="0.1524" layer="91"/>
 <label x="154.94" y="-35.56" size="1.778" layer="95"/>
 </segment>
@@ -6794,67 +6794,67 @@ Current Sensor</text>
 </net>
 <net name="CAP_R" class="0">
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="3"/>
+<pinref part="RELAY1" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="27.94" x2="167.64" y2="27.94" width="0.1524" layer="91"/>
 <label x="154.94" y="27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOTOR_R" class="0">
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="4"/>
+<pinref part="RELAY1" gate="G$1" pin="4"/>
 <wire x1="162.56" y1="25.4" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
 <label x="154.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="START_R" class="0">
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="5"/>
+<pinref part="RELAY1" gate="G$1" pin="5"/>
 <wire x1="162.56" y1="22.86" x2="167.64" y2="22.86" width="0.1524" layer="91"/>
 <label x="154.94" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHARGE_R" class="0">
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="6"/>
+<pinref part="RELAY1" gate="G$1" pin="6"/>
 <wire x1="162.56" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
 <label x="154.94" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ISO_GND" class="0">
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="7"/>
+<pinref part="RELAY1" gate="G$1" pin="7"/>
 <wire x1="162.56" y1="17.78" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
 <label x="154.94" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="8"/>
+<pinref part="RELAY1" gate="G$1" pin="8"/>
 <wire x1="162.56" y1="15.24" x2="167.64" y2="15.24" width="0.1524" layer="91"/>
 <label x="154.94" y="15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="SHD1"/>
+<pinref part="RELAY2" gate="G$1" pin="SHD1"/>
 <wire x1="167.64" y1="-53.34" x2="162.56" y2="-53.34" width="0.1524" layer="91"/>
 <label x="154.94" y="-53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="SHD2"/>
+<pinref part="RELAY2" gate="G$1" pin="SHD2"/>
 <wire x1="162.56" y1="-55.88" x2="167.64" y2="-55.88" width="0.1524" layer="91"/>
 <label x="154.94" y="-55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="SHD1"/>
+<pinref part="RELAY1" gate="G$1" pin="SHD1"/>
 <wire x1="167.64" y1="2.54" x2="162.56" y2="2.54" width="0.1524" layer="91"/>
 <label x="154.94" y="2.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="FCC_1" gate="G$1" pin="SHD2"/>
+<pinref part="RELAY1" gate="G$1" pin="SHD2"/>
 <wire x1="167.64" y1="0" x2="162.56" y2="0" width="0.1524" layer="91"/>
 <label x="154.94" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CAP_VOLT" class="0">
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="2"/>
+<pinref part="RELAY2" gate="G$1" pin="2"/>
 <wire x1="162.56" y1="-25.4" x2="167.64" y2="-25.4" width="0.1524" layer="91"/>
 <label x="154.94" y="-25.4" size="1.778" layer="95"/>
 </segment>
@@ -6867,7 +6867,7 @@ Current Sensor</text>
 </net>
 <net name="MOTOR_VOLT" class="0">
 <segment>
-<pinref part="FCC_2" gate="G$1" pin="3"/>
+<pinref part="RELAY2" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="-27.94" x2="167.64" y2="-27.94" width="0.1524" layer="91"/>
 <label x="154.94" y="-27.94" size="1.778" layer="95"/>
 </segment>
